@@ -9,12 +9,12 @@ tetris::tetris(QWidget *parent) :
     QTime midnight(0,0,0);//это дает рандом
     qsrand(midnight.secsTo(QTime::currentTime()));//это дает рандом
 
-    QPixmap myPix("C:/GIT PUSH/tetris/tetris/FON.jpg");
+    QPixmap myPix(":/Images/FON.jpg");
     QPalette my_palette;
     my_palette.setBrush(QPalette::Window, QBrush(myPix));
     this->setPalette(my_palette);
 
-    setFixedSize(700, 525);
+    setFixedSize(myPix.size());
 }
 
 void tetris::pause_pressed()
