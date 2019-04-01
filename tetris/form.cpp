@@ -300,6 +300,7 @@ void form::endGame()
             return;
         }
     }
+    this->setFocus();
 }
 
 
